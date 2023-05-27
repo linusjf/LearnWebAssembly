@@ -1,0 +1,5 @@
+*.wasm
+*.html
+*.js
+*.out
+*.wsout
