@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+wat2wasm call.wat -o call.wasm
+wasm2wat call.wasm -o call_reverse.wat
+diff call.wat call_reverse.wat
