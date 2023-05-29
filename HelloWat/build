@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+wat2wasm helloworld.wat -o helloworld.wasm
+wasm2wat helloworld.wasm -o helloworld_reverse.wat
