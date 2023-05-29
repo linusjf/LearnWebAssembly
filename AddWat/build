@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+wat2wasm add.wat -o add.wasm
+wasm2wat add.wasm -o add_reverse.wat
+diff add.wat add_reverse.wat
