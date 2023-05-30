@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+wat2wasm table.wat -o table.wasm
+wasm2wat table.wasm -o table_reverse.wat
+diff table.wat table_reverse.wat

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+wat2wasm global.wat -o global.wasm
+wasm2wat global.wasm -o global_reverse.wat
+diff global.wat global_reverse.wat
