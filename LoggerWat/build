@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+wat2wasm logger.wat -o logger.wasm
+wasm2wat logger.wasm -o logger_reverse.wat
+diff logger.wat logger_reverse.wat
