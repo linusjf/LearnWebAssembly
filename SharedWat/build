@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+wat2wasm shared0.wat -o shared0.wasm
+wat2wasm shared1.wat -o shared1.wasm
