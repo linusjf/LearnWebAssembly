@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
 asc index.ts -o index.wasm -t index.wat
+asc addition.ts -o addition.wasm -t addition.wat
