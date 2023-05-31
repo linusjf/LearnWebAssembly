@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+asc index.ts -o index.wasm -t index.wat
