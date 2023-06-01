@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-asc index.ts -o index.wasm -t index.wat
-asc addition.ts -o addition.wasm -t addition.wat
-wat2wasm memory.wat
-wasm-objdump -x memory.wasm
