@@ -1,0 +1,19 @@
+{
+  "compile_kind": 0,
+  "config": 2202906307356721400,
+  "deps": [],
+  "features": "[]",
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/WasiHelloWorld-b9ab2a614b284e81/dep-bin-WasiHelloWorld"
+      }
+    }
+  ],
+  "metadata": 7797948686568424000,
+  "path": 1684066648322512000,
+  "profile": 7309141686862299000,
+  "rustc": 282072437355557200,
+  "rustflags": [],
+  "target": 15880792857321402000
+}

@@ -1,3 +1,5 @@
 *.wat
 !index.html
 !addition.html
+!memory.html
+!memory.wat
