@@ -33,6 +33,16 @@ color:orange;
  console.log("The square of 13 = " + square);
 document.getElementById("textcontent").innerHTML = "The square of 13 = " + square;
  });
+
  </script>
+ <script type="text/javascript">
+const importObj = {
+module: {}
+};
+WebAssembly.instantiateStreaming(fetch("square.wasm"),
+importObj).then(obj => {
+console.log(obj);
+});
+</script>
  </body>
 </html>
