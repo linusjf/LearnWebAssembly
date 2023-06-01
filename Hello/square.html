@@ -16,13 +16,22 @@ color:orange;
  <script>
  let square;
  fetch("square.wasm")
- .then(bytes => bytes.arrayBuffer())
- .then(mod => WebAssembly.compile(mod))
- .then(module => {return new WebAssembly.Instance(module) })
+   .then(bytes => {
+     console.log(bytes);
+    return bytes.arrayBuffer();
+   })
+   .then(mod => {
+     console.log(mod);
+    return WebAssembly.compile(mod);
+   })
+ .then(module => {
+   console.log(module);
+   return new WebAssembly.Instance(module); })
  .then(instance => {
+   console.log(instance);
  square = instance.exports.square(13);
- console.log("The square of 13 = " +square);
-document.getElementById("textcontent").innerHTML = "The square of 13 = " +square;
+ console.log("The square of 13 = " + square);
+document.getElementById("textcontent").innerHTML = "The square of 13 = " + square;
  });
  </script>
  </body>
