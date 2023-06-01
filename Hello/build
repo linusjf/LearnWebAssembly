@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
 emcc hello.c -o hello.html
+clang --target=wasm32 --no-standard-libraries -Wl,--export-all -Wl,--no-entry -o square.wasm square.c
