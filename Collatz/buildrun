@@ -6,6 +6,6 @@ gcc -o hstone hstone.c
 ## generates hstone.js and hstone.wasm as well
 emcc hstone.c -o hstone.html
 ## we'll provide our own HTML file
-emcc hstonewa.c -o hstonewa.js
+emcc -sEXPORTED_FUNCTIONS=_hstone hstonewa.c -o hstonewa.js
 ## new port number for emphasis
 emrun --no_browser --port 7777 .
