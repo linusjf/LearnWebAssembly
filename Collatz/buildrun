@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+## compile into executable hstone
+gcc -o hstone hstone.c
+## execute
+./hstone
+## generates hstone.js and hstone.wasm as well
+emcc hstone.c -o hstone.html
+## . is current working directory, any port number you like
+emrun --no_browser --port 9876 .
