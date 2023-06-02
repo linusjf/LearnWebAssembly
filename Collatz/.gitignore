@@ -1,4 +1,4 @@
 hstone
 hstone.html
-hstone.js
-hstone.wasm
+*.js
+*.wasm
