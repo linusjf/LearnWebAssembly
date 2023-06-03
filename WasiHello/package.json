@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "as-wasi": "^0.6.0"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.27.5"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  },
+  "scripts": {
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "start": "wasmtime --dir . build/release.wasm",
+    "test": "node tests"
+  },
+  "type": "module"
+}

@@ -4,3 +4,5 @@
 *.out
 *.wsout
 commit.txt
+**/node_modules/**
+**/build/**
