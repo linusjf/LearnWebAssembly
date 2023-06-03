@@ -1,5 +1,5 @@
 // The entry file of your WebAssembly module.
-let ret = memory.grow(1);
+memory.grow(1);
 
 let universe_width: u32;
 let universe_height: u32;

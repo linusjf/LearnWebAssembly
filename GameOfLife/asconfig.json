@@ -1,5 +1,8 @@
 {
-  "options": {},
+  "options": {
+    "initialMemory": 1,
+    "memoryBase": 0
+  },
   "targets": {
     "debug": {
       "binaryFile": "build/untouched.wasm",

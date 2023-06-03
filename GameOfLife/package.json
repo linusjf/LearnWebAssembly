@@ -4,7 +4,7 @@
     "url": "https://github.com/linusjf/GameOfLife/issues"
   },
   "dependencies": {
-    "@assemblyscript/loader": "^0.18.15"
+    "@assemblyscript/loader": "^0.27.0"
   },
   "description": "A game of life simulation in WebAssembly",
   "devDependencies": {
