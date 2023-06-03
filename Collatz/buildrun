@@ -7,5 +7,7 @@ gcc -o hstone hstone.c
 emcc hstone.c -o hstone.html
 ## we'll provide our own HTML file
 emcc -sEXPORTED_FUNCTIONS=_hstone hstonewa.c -o hstonewa.js
+## compile a TypeScript file into WebAssembly
+asc hstone.ts -o hstone.wasm
 ## new port number for emphasis
 emrun --no_browser --port 7777 .
