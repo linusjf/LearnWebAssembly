@@ -6,3 +6,4 @@
 commit.txt
 **/node_modules/**
 **/build/**
+*.txt
