@@ -2,3 +2,5 @@ hstone
 hstone.html
 *.js
 *.wasm
+!hstonets.html
+!hstonewa.html

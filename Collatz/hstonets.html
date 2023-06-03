@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Collabz conjecture</title>
+ <meta charset="utf-8"/>
+ <script>
+ fetch('hstone.wasm').then(response => <!-- Line 1 -->
+ response.arrayBuffer() <!-- Line 2 -->
+ ).then(bytes => <!-- Line 3 -->
+ WebAssembly.instantiate(bytes, {imports: {}}) <!-- Line 4 -->
+ ).then(results => { <!-- Line 5 -->
+ window.hstone = results.instance.exports.hstone; <!-- Line 6 -->
+ });
+ </script>
+ </head>
+ <body></body>
+</html>
