@@ -3,7 +3,7 @@
 memory.grow(1);
 
 // Define the size of our checkerboard
-const CHECKERBOARD_SIZE: i32 = 20;
+const CHECKERBOARD_SIZE: i32 = 128;
 
 // Create a buffer/pointer (array index and size) to where
 // in memory we are storing the pixels.
