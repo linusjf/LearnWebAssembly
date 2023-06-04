@@ -10,6 +10,16 @@ const runWasm = async () => {
   const module = await WebAssembly.instantiateStreaming(fetch('./build/optimized.wasm'), importObject);
   const exports = module.instance.exports;
 
+  function showDetails(mem) {
+    var buf = mem.buffer;
+    var memEl = document.getElementById('mem');
+    var pagesEl = document.getElementById('pages');
+
+    memEl.innerText=buf.byteLength;
+    pagesEl.innerText=buf.byteLength / 65536;
+  };
+
+  showDetails(exports.memory);
   const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
 

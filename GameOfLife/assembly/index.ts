@@ -1,4 +1,5 @@
 // The entry file of your WebAssembly module.
+// add secondary buffer
 memory.grow(1);
 
 let universe_width: u32;
@@ -14,11 +15,13 @@ function getCell(x: u32, y: u32): u32 {
 
 @inline
 function setCell(x: u32, y: u32, val: u32): void {
+  // render to secondary buffer using offset
   store<u32>(((x + y * universe_width) << 2) + chunk_offset, val);
 }
 
 @inline
 function copyToPrimary(): void {
+  // copy to primary buffer
   memory.copy(0, chunk_offset, chunk_offset);
 }
 

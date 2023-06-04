@@ -1,6 +1,7 @@
 {
   "options": {
     "initialMemory": 1,
+    "maximumMemory": 2,
     "memoryBase": 0
   },
   "targets": {

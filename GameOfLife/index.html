@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8"/>
     <title>Game of life</title>
-<style type="text/css">
-  body {
-    background: #ccc;
-  }
+    <style type="text/css">
+body {
+  background: #ccc;
+}
   canvas {
     display: block;
     padding: 0;
@@ -16,11 +16,16 @@
     image-rendering: pixelated;
     image-rendering: crisp-edges;
   }
-</style>
+    </style>
   </head>
 
   <body>
     <canvas id="canvas"></canvas>
+    <div class="container">
+      <h1>Memory</h1>
+      <div>Your memory instance is <span id="mem"></span> bytes.</div>
+      <div>It has this many pages: <span id="pages"></span>.</div>
+    </div>
     <script src='./index.js'></script>
   </body>
 </html>
