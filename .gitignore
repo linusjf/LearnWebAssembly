@@ -1,6 +1,4 @@
 *.wasm
-*.html
-*.js
 *.out
 *.wsout
 commit.txt
