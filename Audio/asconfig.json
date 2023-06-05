@@ -1,0 +1,25 @@
+{
+  "options": {
+    "bindings": "esm",
+    "initialMemory": 1,
+    "maximumMemory": 2,
+    "memoryBase": 0
+  },
+  "targets": {
+    "debug": {
+      "debug": true,
+      "outFile": "build/debug.wasm",
+      "sourceMap": true,
+      "textFile": "build/debug.wat"
+    },
+    "release": {
+      "converge": false,
+      "noAssert": false,
+      "optimizeLevel": 3,
+      "outFile": "build/release.wasm",
+      "shrinkLevel": 0,
+      "sourceMap": true,
+      "textFile": "build/release.wat"
+    }
+  }
+}
