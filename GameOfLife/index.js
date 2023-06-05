@@ -15,8 +15,8 @@ const runWasm = async () => {
     var memEl = document.getElementById('mem');
     var pagesEl = document.getElementById('pages');
 
-    memEl.innerText=buf.byteLength;
-    pagesEl.innerText=buf.byteLength / 65536;
+    memEl.innerText = buf.byteLength / 1024;
+    pagesEl.innerText = buf.byteLength / 65536;
   };
 
   showDetails(exports.memory);
